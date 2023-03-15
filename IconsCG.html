@@ -46,6 +46,10 @@
       color: rgb(241, 102, 217);
     }
 
+    .spotify:hover {
+      color: #1DB954;
+    }
+
     .youtube:hover {
       color: #FF0000;
     }
@@ -77,6 +81,12 @@
       </div>
       <!-- End instagram Icon -->
 
+      <!-- Start spotify Icon -->
+      <div id="spotify" onclick="navigate(this.id)" class="social">
+        <span class="icon spotify"><i class="fab fa-spotify"></i></span>
+      </div>
+      <!-- End spotify Icon -->
+
       <!-- Start youtube Icon -->
       <div id="youtube" onclick="navigate(this.id)" class="social">
         <span class="icon youtube"><i class="fab fa-youtube"></i></span>
@@ -103,6 +113,9 @@
         }
         else if (id === "instagram") {
           window.open("https://www.instagram.com/carolinegirvan/", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "spotify") {
+          window.open("https://open.spotify.com/user/6pzpdpqv881tq161hs3kj2vzu", '_blank').focus(); //Add the url to your spotify account
         }
         else if (id === "youtube") {
           window.open("https://www.youtube.com/c/carolinegirvan", '_blank').focus(); //Add the url to your youtube account
